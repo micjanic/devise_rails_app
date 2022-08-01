@@ -18,7 +18,6 @@ RSpec.describe "posts/edit", type: :view do
     assert_select "form[action=?][method=?]", post_path(@post), "post" do
 
       assert_select "input[name=?]", "post[title]"
-
       assert_select "textarea[name=?]", "post[body]"
     end
   end
